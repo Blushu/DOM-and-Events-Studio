@@ -78,8 +78,13 @@ window.addEventListener("load", function (e) {
 		if (spaceShuttleHeight.innerHTML == "0") {
 			window.alert("Space Shuttle has not launched yet.");
 		} else {
+			// Move Rocket
 			let currentRocketHeight = parseInt(rocket.style.bottom);
 			rocket.style.bottom = currentRocketHeight + 10 + "px";
+
+			// Update Shuttle Height
+			let currentHeight = Number(spaceShuttleHeight.innerHTML);
+			spaceShuttleHeight.innerHTML = currentHeight + 10000;
 		}
 	});
 
@@ -87,8 +92,13 @@ window.addEventListener("load", function (e) {
 		if (spaceShuttleHeight.innerHTML == "0") {
 			window.alert("Space Shuttle has not launched yet.");
 		} else {
+			// Move Rocket
 			let currentRocketHeight = parseInt(rocket.style.bottom);
 			rocket.style.bottom = currentRocketHeight - 10 + "px";
+
+			// Update Shuttle Height
+			let currentHeight = Number(spaceShuttleHeight.innerHTML);
+			spaceShuttleHeight.innerHTML = currentHeight - 10000;
 		}
 	});
 
